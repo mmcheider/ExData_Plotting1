@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #
 # Description: This project uses “Individual household electric power 
 #              consumption Data Set” from UC Irvine Machine Learning 
