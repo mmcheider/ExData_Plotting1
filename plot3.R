@@ -16,17 +16,17 @@ z <- strptime(paste(mydata$Date, mydata$Time), "%d/%m/%Y %H:%M:%S")
 # make the plot
 with(mydata, 
      { 
-        plot(z,as.numeric(Sub_metering_1), type = "n", 
-             ylab = "Energy sub metering", xlab = "")
-        lines(z,as.numeric(Sub_metering_1),  col = "black", type = "l", 
-              lty = 1, lwd = 1)
-        lines(z, as.numeric(Sub_metering_2),  col = "red", type = "l", 
-              lty = 1, lwd = 1)
-        lines(z,as.numeric(Sub_metering_3),  col = "blue", type = "l", 
-              lty = 1, lwd = 1)
-        ## add Legend
-        legend("topright",legend = c("Sub_metering_1","Sub_metering_2",
-               "Sub_metering_3"), col=c("black","red","blue"), lty=1, xjust = 0)
+             plot(z,as.numeric(Sub_metering_1), type = "n", 
+                  ylab = "Energy sub metering", xlab = "")
+             lines(z,as.numeric(Sub_metering_1),  col = "black", type = "l", 
+                   lty = 1, lwd = 1)
+             lines(z, as.numeric(Sub_metering_2),  col = "red", type = "l", 
+                   lty = 1, lwd = 1)
+             lines(z,as.numeric(Sub_metering_3),  col = "blue", type = "l", 
+                   lty = 1, lwd = 1)
+             # add Legend
+             legend("topright",legend = c("Sub_metering_1","Sub_metering_2",
+                                          "Sub_metering_3"), col=c("black","red","blue"), lty=1, xjust = 0)
      } 
 )
 # copy the plot to .png file device
