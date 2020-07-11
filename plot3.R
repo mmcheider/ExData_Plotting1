@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #
 # Description: This project uses “Individual household electric power 
 #              consumption Data Set” from UC Irvine Machine Learning 
@@ -32,6 +33,6 @@ with(mydata,
      } 
 )
 # copy the plot to .png file device
-dev.copy(png,"plot3.png")
+dev.copy(png, "plot3.png")
 # close the graphics file device
 dev.off()
