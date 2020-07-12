@@ -14,7 +14,7 @@ mydata <- mydata[66638:69518, ]
 # convert date and time character vectors to class of "POSIXlt"
 z <- strptime(paste(mydata$Date, mydata$Time), "%d/%m/%Y %H:%M:%S")
 # set the placement of multiple plots
-par(mfrow = c(2,2))
+par(mfrow = c(2,2), mar = c(4,4,2,1), oma = c(0,0,0,0))
 # make the 1st plot
 plot(z,as.numeric(mydata$Global_active_power), type = "l", 
      ylab = "Global Active Power", xlab = "")
@@ -37,7 +37,7 @@ with(mydata,
                                                  "Sub_metering_2",
                                                  "Sub_metering_3"), 
                col=c("black","red","blue"), 
-               lty=1, box.lty=0, y.intersp = 0.8)
+               lty = 1, bty = "n", xjust = 1, cex = 0.8, y.intersp = 0.8)
      }
 )
 # make the 4th plot
